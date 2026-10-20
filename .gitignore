@@ -1,0 +1,17 @@
+.DS_Store
+node_modules/
+*.log
+.env
+.env.*
+!.env.example
+outputs/
+dist/
+검증결과/
+playwright-report/
+test-results/
+.auth/
+*storage-state*.json
+*cookies*.json
+configs/*.local.*
+__pycache__/
+*.pyc
