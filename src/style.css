@@ -12,3 +12,10 @@
 .template-download{margin-top:12px;padding-top:10px;border-top:1px solid var(--line)}.print-only{display:none}@media print{.print-only{display:block;margin-top:24px}.print-only h3{font-size:15px;margin-bottom:8px}.print-only .muted{margin-bottom:10px}}
 
 .pdf-busy::before{content:"";display:inline-block;width:12px;height:12px;border:2px solid currentColor;border-right-color:transparent;border-radius:50%;margin-right:8px;vertical-align:middle;animation:pdf-spin .8s linear infinite}@keyframes pdf-spin{to{transform:rotate(360deg)}}
+
+/* Separate formatted reports from exports of the current view. */
+.report-download{background:#16705c;color:#fff;border-color:#16705c;margin-inline-start:8px}
+.report-download:hover:not(:disabled){background:#105846;border-color:#105846}
+.report-download:focus-visible{outline:3px solid #71cbb2;outline-offset:3px}
+@media screen{html[data-theme="dark"] .report-download{background:#91dcc4;color:#112f27;border-color:#91dcc4}html[data-theme="dark"] .report-download:hover:not(:disabled){background:#b0ead8;border-color:#b0ead8}}
+@media(max-width:760px){.report-download{margin-inline-start:0}}
