@@ -2,9 +2,9 @@
 
 `index.html`을 브라우저로 열면 됩니다. 외부 연결 없이 사용하며, 기본은 다크 모드입니다.
 
-공개 주소: https://dasom222g.github.io/kimpro-campaign-dashboard/
+공개 주소: https://kimpro-campaign-dashboard.vercel.app
 
-`main` 브랜치에 푸시하면 테스트·빌드를 거쳐 GitHub Pages에 자동 배포합니다. 배포 파일은 `index.html` 하나이며, 입력 CSV를 내장하고, 보고 양식과 보고서 PDF는 한글 글꼴을 포함해 브라우저에서 생성합니다. CSV는 Excel 한글 호환을 위해 UTF-8 BOM을 포함합니다.
+`main` 브랜치에 푸시하면 Vercel에서 빌드 후 자동 배포합니다. GitHub Actions에서는 테스트·빌드를 확인합니다. 배포 파일은 `index.html` 하나이며, 입력 CSV를 내장하고, 보고 양식과 보고서 PDF는 한글 글꼴을 포함해 브라우저에서 생성합니다. CSV는 Excel 한글 호환을 위해 UTF-8 BOM을 포함합니다.
 
 ## 시연 순서
 
