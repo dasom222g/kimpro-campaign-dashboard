@@ -16,5 +16,4 @@ const updated=rows.map(r=>r.id==='KIM-2026-010'?{...r,spend:1500000,status:'집�
 fs.writeFileSync(path.join(fixtures,'02_금요일_갱신내역.csv'),C.csv(updated));
 fs.writeFileSync(path.join(root,'src/sample-data.js'),'window.DEMO_FILES = '+JSON.stringify([{name:initial,base64:Buffer.from(C.csv(rows)).toString('base64')}])+';\n');
 fs.writeFileSync(path.join(root,'tests/expected.json'),JSON.stringify({initialCount:36,initialBudget:200000000,initialSpend:104700000,initialPending:12,updatedCount:37,updatedSpend:107100000,updatedPending:11},null,2));
-require('./create-report-form.cjs');
-console.log('입력자료: 기본 CSV·보고 양식 XLSX / 검증자료: 동일 내용 XLSX·금요일 갱신 CSV');
+console.log('입력자료: 기본 CSV / 검증자료: 동일 내용 XLSX·금요일 갱신 CSV');

@@ -1,1 +1,13 @@
-{"name":"kimpro-campaign-budget-demo","version":"1.0.0","private":true,"scripts":{"build":"node scripts/build.cjs","samples":"node scripts/create-samples.cjs","test":"node --test tests/core.test.cjs","test:browser":"node tests/browser.cjs","serve":"python3 -m http.server 8768 --bind 127.0.0.1"}}
+{
+  "name": "kimpro-campaign-budget-demo",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "node scripts/build.cjs",
+    "samples": "node scripts/create-samples.cjs",
+    "test": "node --test tests/core.test.cjs",
+    "test:browser": "node tests/browser.cjs",
+    "serve": "python3 -m http.server 8768 --bind 127.0.0.1",
+    "report-template": "node scripts/create-report-form.cjs"
+  }
+}
